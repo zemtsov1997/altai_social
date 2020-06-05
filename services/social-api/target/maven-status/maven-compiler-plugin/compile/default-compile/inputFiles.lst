@@ -1,0 +1,15 @@
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dto\VoteAnswerDto.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dto\CampaignStatusDto.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\model\IArticle.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dao\CampaignControllerDao.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dto\ArticleDto.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\model\ICampaign.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dao\CampaignStatusControllerDao.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\model\ICampaignStatus.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\model\IVote.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dto\CampaignDto.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dao\VoteControllerDao.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dto\VoteDto.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\model\IVoteAnswer.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dao\ArticleControllerDao.java
+E:\Projects\social_altai\social-api\src\main\java\ru\altai\social\api\dao\VoteAnswerControllerDao.java

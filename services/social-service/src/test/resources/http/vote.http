@@ -1,0 +1,34 @@
+GET http://localhost:8002/votes
+
+###
+
+GET http://localhost:8002/votes/19
+
+###
+
+POST http://localhost:8002/votes
+Content-Type: application/json
+
+{
+  "answer": { "id": 1 },
+  "userId": 99,
+  "campaignId" : 12
+}
+
+###
+
+PUT http://localhost:8002/votes/19
+Content-Type: application/json
+
+{
+  "id": 19,
+  "answer": { "id": 1 },
+  "userId": 1,
+  "campaignId": 12
+}
+
+###
+
+DELETE http://localhost:8002/votes/19
+
+###

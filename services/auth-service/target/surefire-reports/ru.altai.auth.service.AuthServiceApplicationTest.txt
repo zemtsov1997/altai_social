@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ru.altai.auth.service.AuthServiceApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.416 s - in ru.altai.auth.service.AuthServiceApplicationTest

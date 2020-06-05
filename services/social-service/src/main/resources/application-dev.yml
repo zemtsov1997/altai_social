@@ -1,0 +1,13 @@
+eureka:
+  client:
+    enabled: false
+
+spring:
+  profiles: dev
+  datasource:
+    platform: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/social_service?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true
+    username: ${DB_USER:social_service}
+    password: ${DB_PASSWORD:social_service}
+

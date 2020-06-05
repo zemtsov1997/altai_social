@@ -1,0 +1,8 @@
+ru\altai\auth\jwt\api\config\JwtConfig.class
+ru\altai\auth\jwt\api\utils\CookieUtils.class
+ru\altai\auth\jwt\api\filter\JwtHeaderTokenFilter.class
+ru\altai\auth\jwt\api\filter\JwtTokenAuthFilter.class
+ru\altai\auth\jwt\api\model\AuthUser.class
+ru\altai\auth\jwt\api\AuthProps.class
+ru\altai\auth\jwt\api\filter\JwtUsrPassAuthFilter.class
+ru\altai\auth\jwt\api\model\MutableHttpServletRequest.class
