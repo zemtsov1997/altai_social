@@ -26,7 +26,7 @@
         <mysql.version>8.0.15</mysql.version>
         <h2.version>1.4.200</h2.version>
         <social-api.version>1.0.0</social-api.version>
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.11.0</jackson.version>
         <guava.version>28.2-jre</guava.version>
         <lombok.version>1.18.12</lombok.version>
     </properties>
