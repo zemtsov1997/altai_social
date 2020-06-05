@@ -1,9 +1,0 @@
-POST http://localhost:8001/token
-Content-Type: application/json
-
-{
-  "username": "zemtsov_a22",
-  "password": "asdasdasdsad222"
-}
-
-###

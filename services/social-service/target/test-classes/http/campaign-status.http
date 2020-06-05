@@ -1,4 +1,0 @@
-GET http://localhost:8002/campaignStatuses
-Content-Type: application/json
-
-###

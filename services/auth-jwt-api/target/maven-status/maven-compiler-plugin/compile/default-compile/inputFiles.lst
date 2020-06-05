@@ -1,8 +1,0 @@
-E:\Projects\social_altai\auth-jwt-api\src\main\java\ru\altai\auth\jwt\api\config\JwtConfig.java
-E:\Projects\social_altai\auth-jwt-api\src\main\java\ru\altai\auth\jwt\api\utils\CookieUtils.java
-E:\Projects\social_altai\auth-jwt-api\src\main\java\ru\altai\auth\jwt\api\model\AuthUser.java
-E:\Projects\social_altai\auth-jwt-api\src\main\java\ru\altai\auth\jwt\api\AuthProps.java
-E:\Projects\social_altai\auth-jwt-api\src\main\java\ru\altai\auth\jwt\api\filter\JwtUsrPassAuthFilter.java
-E:\Projects\social_altai\auth-jwt-api\src\main\java\ru\altai\auth\jwt\api\filter\JwtHeaderTokenFilter.java
-E:\Projects\social_altai\auth-jwt-api\src\main\java\ru\altai\auth\jwt\api\filter\JwtTokenAuthFilter.java
-E:\Projects\social_altai\auth-jwt-api\src\main\java\ru\altai\auth\jwt\api\model\MutableHttpServletRequest.java

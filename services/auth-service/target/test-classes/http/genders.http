@@ -1,7 +1,0 @@
-GET http://localhost:8001/genders
-
-###
-
-GET http://localhost:8001/genders/1
-
-###
