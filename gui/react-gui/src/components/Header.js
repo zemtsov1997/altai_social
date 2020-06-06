@@ -6,7 +6,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="Header">
-        <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
+        <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg" fixed="top">
           <Navbar.Brand as={Link} to="/">Altai Social</Navbar.Brand>
           <Navbar.Toggle/>
           <Navbar.Collapse className="justify-content-end">
