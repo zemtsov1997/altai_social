@@ -47,6 +47,7 @@ figure > figcaption {
 
 .evaluation-image {
   margin-left: 3px;
+  margin-right: 3px;
   width: 15px;
   height: 15px;
   opacity: 0.7;
@@ -54,4 +55,8 @@ figure > figcaption {
 
 .caption-blue{
   color: #007bff;
+}
+
+.Initiative :hover{
+  background-color: #adc4ff;
 }

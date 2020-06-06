@@ -3,12 +3,12 @@ import './Initiative.css';
 import avatar from '../../assets/images/user.jpg';
 import {Image} from "react-bootstrap";
 
-class Initiative extends React.Component {
+class Comment extends React.Component {
   render() {
     const {content, date, author} = this.props;
 
     return (
-      <div className="Initiative">
+      <div className="Comment">
         <div className="media media-font-small">
           <Image className="media-object"
                  src={avatar}
@@ -33,4 +33,4 @@ class Initiative extends React.Component {
   }
 }
 
-export default Initiative;
+export default Comment;

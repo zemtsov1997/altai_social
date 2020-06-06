@@ -66,7 +66,7 @@ class Initiative extends React.Component {
             />
           </Col>
           <Col md={6} className="text-center">
-            10
+            5
             <Image className="evaluation-image"
                    src={dislike}
                    roundedCircle
