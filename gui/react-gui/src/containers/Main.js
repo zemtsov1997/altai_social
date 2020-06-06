@@ -2,7 +2,6 @@ import React from 'react';
 import {Button, Col, Container, Row} from "react-bootstrap";
 import InitiativeList from "./InitiativeList";
 import InitiativeDetail from "../components/Initiatives/InitiativeDetail";
-import {GOOGLE_API_KEY} from "../constants";
 import CustomMap from "../components/Map";
 
 class Main extends React.Component {
@@ -28,7 +27,7 @@ class Main extends React.Component {
           <Col md={6}>
             <InitiativeDetail/>
             <div className="mt-4">
-              <CustomMap/>}/>
+              <CustomMap/>
             </div>
           </Col>
         </Row>
