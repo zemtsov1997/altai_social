@@ -65,10 +65,4 @@ const mapStateToProps = (state) => {
   }
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    logout: () => dispatch(actions.logout)
-  }
-};
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
+export default withRouter(connect(mapStateToProps, {logout: actions.logout})(Header));
