@@ -10,6 +10,9 @@ POST http://localhost:8002/campaigns
 Content-Type: application/json
 
 {
+  "dateCreate": "2020-06-03T12:00:00",
+  "dateStart": "2020-06-03T12:00:00",
+  "dateFinish": "2020-06-22T12:00:00",
   "campaignStatus": { "id": 4 }
 }
 

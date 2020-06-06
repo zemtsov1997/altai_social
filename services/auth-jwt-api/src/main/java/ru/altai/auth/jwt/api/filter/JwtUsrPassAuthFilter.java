@@ -61,8 +61,9 @@ public class JwtUsrPassAuthFilter extends UsernamePasswordAuthenticationFilter {
                 .setExpiration(new Date(now + jwtConfig.getExpiration() * 1000))  // in milliseconds
                 .signWith(SignatureAlgorithm.HS512, jwtConfig.getSecret().getBytes())
                 .compact();
-        response.addHeader(jwtConfig.getHeader(), jwtConfig.getPrefix() + token);
         response.addHeader("Access-Control-Allow-Origin", "*");
+        response.addHeader("Access-Control-Expose-Headers", "Authorization, Access-Token, Uid");
+        response.addHeader(jwtConfig.getHeader(), jwtConfig.getPrefix() + token);
     }
 
 }

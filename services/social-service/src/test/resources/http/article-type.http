@@ -1,0 +1,4 @@
+GET http://localhost:8002/articleTypes
+Content-Type: application/json
+
+###

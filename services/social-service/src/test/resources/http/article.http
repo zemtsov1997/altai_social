@@ -11,10 +11,15 @@ Content-Type: application/json
 
 {
   "caption": "Заголовок",
-  "description" : "Описание",
-  "text" : "Основной текст",
-  "campaign" : {
-    "campaignStatus": { "id": 1 }
+  "description": "Описание",
+  "text": "Основной текст",
+  "campaign": {
+    "campaignStatus": {
+      "id": 1
+    }
+  },
+  "articleType": {
+    "id": 1
   }
 }
 
@@ -31,6 +36,9 @@ Content-Type: application/json
   "campaign" : {
     "id" : "15",
     "campaignStatus": { "id": 2 }
+  },
+  "articleType": {
+    "id": 1
   }
 }
 

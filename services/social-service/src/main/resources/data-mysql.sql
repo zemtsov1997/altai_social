@@ -24,3 +24,12 @@ INSERT IGNORE INTO campaign_status_names_view (campaign_status_id, name_view, lo
 INSERT IGNORE INTO campaign_status_names_view (campaign_status_id, name_view, locale) VALUES ('2', 'Started', 'en');
 INSERT IGNORE INTO campaign_status_names_view (campaign_status_id, name_view, locale) VALUES ('3', 'Ended', 'en');
 INSERT IGNORE INTO campaign_status_names_view (campaign_status_id, name_view, locale) VALUES ('4', 'In th archive', 'en');
+
+INSERT IGNORE INTO article_type (id, name_system) VALUES ('1', 'PUBLIC');
+INSERT IGNORE INTO article_type (id, name_system) VALUES ('2', 'POLITICAL');
+
+INSERT IGNORE INTO article_type_names_view (article_type_id, name_view, locale) VALUES ('1', 'Общественная', 'ru_RU');
+INSERT IGNORE INTO article_type_names_view (article_type_id, name_view, locale) VALUES ('2', 'Политическая', 'ru_RU');
+
+INSERT IGNORE INTO article_type_names_view (article_type_id, name_view, locale) VALUES ('1', 'Public', 'en');
+INSERT IGNORE INTO article_type_names_view (article_type_id, name_view, locale) VALUES ('2', 'Political', 'en');
