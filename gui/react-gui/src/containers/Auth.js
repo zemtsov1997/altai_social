@@ -1,6 +1,7 @@
 import React from 'react';
 import SignUpForm from "../components/SignUpForm";
 import SignInForm from "../components/SignInForm";
+import {Button} from "react-bootstrap";
 
 class Auth extends React.Component {
   constructor(props) {
@@ -25,19 +26,19 @@ class Auth extends React.Component {
         <hr/>
         <div className="text-center">
           {
-            <a href="#forgot_password">
+            <Button variant="link">
               Забыли пароль?
-            </a>
+            </Button>
           }
         </div>
         <div className="text-center">
           {
             isSignUpForm ?
-              <a href="#sign_in" role="button" onClick={this.switch}>
+              <Button variant="link" onClick={this.switch}>
                 Уже есть аккаунт? Войдите!
-              </a>
+              </Button>
               :
-              <a href="#sign_up" role="button" onClick={this.switch}>Еще не зарегистрированы? Вам сюда!</a>
+              <Button variant="link" onClick={this.switch}>Еще не зарегистрированы? Вам сюда!</Button>
           }
         </div>
       </div>

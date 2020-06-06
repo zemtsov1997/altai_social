@@ -37,43 +37,51 @@ class SignUpForm extends React.Component {
         <Form.Group>
           <Form.Control type="text"
                         name="username"
-                        placeholder="Логин"/>
+                        placeholder="Логин"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="password"
                         name="password"
                         placeholder="Пароль"
-                        autoComplete="on"/>
+                        autoComplete="on"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="text"
                         name="lastName"
-                        placeholder="Фамилия"/>
+                        placeholder="Фамилия"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="text"
                         name="firstName"
-                        placeholder="Имя"/>
+                        placeholder="Имя"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="text"
                         name="middleName"
-                        placeholder="Отчество"/>
+                        placeholder="Отчество"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="email"
                         name="email"
-                        placeholder="Email"/>
+                        placeholder="Email"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control name="phone"
                         placeholder="Номер телефона"
+                        required
                         maxLength="10"/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="date"
                         name="birthDate"
-                        placeholder="Дата рождения"/>
+                        placeholder="Дата рождения"
+                        required/>
         </Form.Group>
 
         <Form.Group as={Row}>
@@ -86,6 +94,7 @@ class SignUpForm extends React.Component {
               value="1"
               custom
               id="male-radio"
+              required
             />
             <Form.Check
               type="radio"
