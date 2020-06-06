@@ -1,6 +1,5 @@
 import axios from 'axios';
 import * as actionTypes from './actionTypes';
-import {getToken} from "../../../methods";
 
 export const authStart = () => {
   return {
@@ -82,7 +81,7 @@ export const signUp = (data) => {
 
 export const authCheckState = () => {
   return dispatch => {
-    const token = getToken();
+    const token = localStorage.getItem('token');
     if (!token) {
       dispatch(logout());
     } else {

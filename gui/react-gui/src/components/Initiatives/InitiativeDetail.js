@@ -1,7 +1,7 @@
 import React from 'react';
 import './Initiative.css';
 import avatar from '../../assets/images/user.jpg';
-import figure from '../../assets/images/figure.png';
+import initiative from '../../assets/images/test-initiative.jpg';
 
 import {Badge, Button, ButtonGroup, Col, Container, Image, Row} from "react-bootstrap";
 import like from "../../assets/images/like.png";
@@ -50,7 +50,7 @@ class Initiative extends React.Component {
         <Image
           width="100%"
           height="200px"
-          src={figure}
+          src={initiative}
         />
         <h4 className="caption-blue text-center mt-4">Отдай голос за свой выбор</h4>
         <ButtonGroup style={{width: '100%'}}>

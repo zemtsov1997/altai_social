@@ -1,8 +1,9 @@
 import React from 'react';
-import avatar from '../assets/images/user.jpg';
+import './Header.css';
+import avatar from '../../assets/images/user.jpg';
 import {Dropdown, DropdownItem, Image, Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import * as actions from '../store/actions/auth/actionCreators';
+import * as actions from '../../store/actions/auth/actionCreators';
 import {connect} from "react-redux";
 import {withRouter} from "react-router";
 

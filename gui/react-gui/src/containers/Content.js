@@ -3,6 +3,8 @@ import {Col, Container, Row} from "react-bootstrap";
 import Auth from "./Auth";
 import Main from "./Main";
 import {connect} from "react-redux";
+import Map from '../components/Map';
+import {GOOGLE_API_KEY} from '../constants';
 
 class Content extends React.Component {
   render() {
@@ -10,7 +12,7 @@ class Content extends React.Component {
 
     return (
       <Container className="Content mt-4">
-        <Row>
+        <Row className="">
           <Col md={isAuthenticated ? 12 : 9}>
             <Main/>
           </Col>

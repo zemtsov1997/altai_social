@@ -28,7 +28,7 @@
 
 figure {
   display: table;
-  margin: 0 auto 1em;
+  margin-right: 15px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -57,6 +57,6 @@ figure > figcaption {
   color: #007bff;
 }
 
-.Initiative :hover{
-  background-color: #adc4ff;
+.Initiative .media{
+  cursor: pointer;
 }
