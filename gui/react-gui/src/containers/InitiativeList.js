@@ -5,7 +5,7 @@ import Initiative from "../components/Initiatives/Initiative";
 class InitiativeList extends React.Component {
   render() {
     return (
-      <Container fluid className="InitiativeList mt-4">
+      <div className="InitiativeList mt-4">
         <Initiative title={'Запретить стройку парковки вместо парка отдыха'}
                     content={'На улице парковой хотят построить парковку для бизнес-центра...'}
                     date={'Сегодня'}
@@ -20,7 +20,7 @@ class InitiativeList extends React.Component {
                     'Предлагаю построить приют для животных. НЕ НАДО УБИ...'}
                     date={'3 дня назад'}
                     author={'Петр Петров'}/>
-      </Container>
+      </div>
     )
   }
 }

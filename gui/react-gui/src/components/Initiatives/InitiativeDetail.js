@@ -3,7 +3,7 @@ import './Initiative.css';
 import avatar from '../../assets/images/user.jpg';
 import figure from '../../assets/images/figure.png';
 
-import {Container, Figure, Image} from "react-bootstrap";
+import {Button, Container, Figure, Image} from "react-bootstrap";
 
 class Initiative extends React.Component {
   render() {
@@ -21,10 +21,15 @@ class Initiative extends React.Component {
             <div className="media-title">
               <h4>Запретить стройку парковки вместо парка отдыха</h4>
             </div>
-            <div className="media-text">
-
-            </div>
           </div>
+        </div>
+        <div>
+          <Button className="rounded-inline-btn mb-2" variant="primary" size="sm">Строительство</Button>
+          <Button className="rounded-inline-btn mb-2" variant="primary" size="sm">Центральный район</Button>
+          <Button className="rounded-inline-btn mb-2" variant="primary" size="sm">Снос</Button>
+          <Button className="rounded-inline-btn mb-2" variant="primary" size="sm">Общество</Button>
+          <Button className="rounded-inline-btn mb-2" variant="primary" size="sm">Природа</Button>
+          <Button className="rounded-inline-btn mb-2" variant="primary" size="sm">Экология</Button>
         </div>
         <div className="media-font-small">
           <p>
