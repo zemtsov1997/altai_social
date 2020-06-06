@@ -26,10 +26,10 @@ class Initiative extends React.Component {
             <div className="media-text">
               {content}
             </div>
-            <div className="media-date" style={{float:'left'}}>
+            <div className="media-date" style={{float: 'left'}}>
               <span className="date">{date}</span>
             </div>
-            <div style={{float:'right'}}>
+            <div style={{float: 'right'}}>
               31
               <Image className="evaluation-image"
                      src={like}
