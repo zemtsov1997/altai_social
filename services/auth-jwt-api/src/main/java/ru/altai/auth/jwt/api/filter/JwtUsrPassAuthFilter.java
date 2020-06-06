@@ -10,8 +10,8 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import ru.altai.auth.jwt.api.model.AuthUser;
 import ru.altai.auth.jwt.api.config.JwtConfig;
+import ru.altai.auth.jwt.api.model.AuthUser;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -62,6 +62,7 @@ public class JwtUsrPassAuthFilter extends UsernamePasswordAuthenticationFilter {
                 .signWith(SignatureAlgorithm.HS512, jwtConfig.getSecret().getBytes())
                 .compact();
         response.addHeader(jwtConfig.getHeader(), jwtConfig.getPrefix() + token);
+        response.addHeader("Access-Control-Allow-Origin", "*");
     }
 
 }

@@ -28,15 +28,41 @@ class SignUpForm extends React.Component {
       }
     };
     const options = {
-      method: 'POST',
-      url: 'http://localhost:8002/appUsers',
-      data: data,
+          method: 'POST',
+          url: 'http://localhost:8002/appUsers',
+          data: data,
+            headers: {
+                "Content-Type": "application/json"
+            }
     };
+      const options2 = {
+          method: 'POST',
+          url: 'http://localhost:8002/token',
+          data: {
+              "username": data.username,
+              "password": data.password
+          },
+          headers: { }
+      };
     axios(options)
       .then(res => {
+      console.log("Создали пользака");
         console.log(res.data);
+          axios(options2)
+              .then(res => {
+                  console.log("Получили токен");
+                  console.log(res.data);
+
+              })
+              .catch(err => {
+                  console.log("Не Получили токен");
+                  console.log(err.response.data);
+                  console.log(err.response);
+                  console.log(err.data);
+              });
       })
       .catch(err => {
+          console.log("Не Создали пользака");
         console.log(err.response.data);
         console.log(err.response);
         console.log(err.data);
