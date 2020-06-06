@@ -5,7 +5,7 @@ import Auth from "./Auth";
 class Content extends React.Component {
   render() {
     return (
-      <Container className="Content">
+      <Container className="Content mt-4">
         <Row>
           <Col md={9}>
             <a href={"/user/page"}>Личный кабинет</a>
