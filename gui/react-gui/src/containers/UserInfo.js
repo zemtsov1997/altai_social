@@ -3,6 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import UserInfoImg from "../components/UserInfoImg";
 import UserInfoProfile from "../components/UserInfoProfile";
 import UserInfoTasks from "../components/UserInfoTasks";
+import UserProgress from "../components/UserProgress";
 
 class UserInfo extends React.Component{
     render() {
@@ -17,7 +18,17 @@ class UserInfo extends React.Component{
                         <UserInfoProfile/>
                     </Col>
                 </Row>
+                <br/>
                 <hr/>
+                <br/>
+                <Row>
+                    <Col>
+                        <UserProgress/>
+                    </Col>
+                </Row>
+                <br/>
+                <hr/>
+                <br/>
                 <Row>
                     <Col>
                         <UserInfoTasks/>
