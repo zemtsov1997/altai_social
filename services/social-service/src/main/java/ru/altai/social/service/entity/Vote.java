@@ -22,4 +22,11 @@ public class Vote implements IVote {
     private Long userId;
     private Long campaignId;
 
+    public Vote(IVote iVote) {
+        this.id = iVote.getId();
+        this.answer = new VoteAnswer(iVote.getAnswer());
+        this.userId = iVote.getUserId();
+        this.campaignId = iVote.getCampaignId();
+    }
+
 }
