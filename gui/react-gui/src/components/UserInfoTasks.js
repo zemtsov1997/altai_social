@@ -81,7 +81,7 @@ class UserInfoTasks extends React.Component{
                                     </Card.Text>
                                     <Col>
                                         <Row className="justify-content-md-between">
-                                            <Button variant="success" block size="sm">Да</Button>
+                                            <Button variant="outline-success" block size="sm">Да</Button>
                                             <Button variant="outline-danger" block size="sm">Нет</Button>
                                         </Row>
                                     </Col>
@@ -107,7 +107,7 @@ class UserInfoTasks extends React.Component{
                                     <Col className="align-items-end">
                                         <Row className="justify-content-md-between">
                                             <Button variant="outline-success" block size="sm">Да</Button>
-                                            <Button variant="danger" block size="sm">Нет</Button>
+                                            <Button variant="outline-danger" block size="sm">Нет</Button>
                                         </Row>
                                     </Col>
                                 </Card.Body>
