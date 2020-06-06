@@ -25,12 +25,19 @@ class Auth extends React.Component {
         <hr/>
         <div className="text-center">
           {
+            <a href="#forgot_password">
+              Забыли пароль?
+            </a>
+          }
+        </div>
+        <div className="text-center">
+          {
             isSignUpForm ?
-              <a href="#" role="button" onClick={this.switch}>
+              <a href="#sign_in" role="button" onClick={this.switch}>
                 Уже есть аккаунт? Войдите!
               </a>
               :
-              <a href="#" role="button" onClick={this.switch}>Еще не зарегистрированы? Вам сюда!</a>
+              <a href="#sign_up" role="button" onClick={this.switch}>Еще не зарегистрированы? Вам сюда!</a>
           }
         </div>
       </div>

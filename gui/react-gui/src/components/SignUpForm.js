@@ -1,7 +1,8 @@
 import React from 'react';
-import axios from 'axios';
 
 import {Button, Col, Form, Row} from "react-bootstrap";
+import {connect} from "react-redux";
+import * as actions from '../store/actions/auth/actionCreators';
 
 
 class SignUpForm extends React.Component {
@@ -27,20 +28,7 @@ class SignUpForm extends React.Component {
         dateBirthday: elements.birthDate.value,
       }
     };
-    const options = {
-      method: 'POST',
-      url: 'http://localhost:8002/appUsers',
-      data: data,
-    };
-    axios(options)
-      .then(res => {
-        console.log(res.data);
-      })
-      .catch(err => {
-        console.log(err.response.data);
-        console.log(err.response);
-        console.log(err.data);
-      });
+    this.props.signUp(data);
   };
 
   render() {
@@ -49,46 +37,55 @@ class SignUpForm extends React.Component {
         <Form.Group>
           <Form.Control type="text"
                         name="username"
-                        placeholder="Логин"/>
+                        placeholder="Логин"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="password"
                         name="password"
                         placeholder="Пароль"
-                        autoComplete="on"/>
+                        autoComplete="on"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="text"
                         name="lastName"
-                        placeholder="Фамилия"/>
+                        placeholder="Фамилия"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="text"
                         name="firstName"
-                        placeholder="Имя"/>
+                        placeholder="Имя"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="text"
                         name="middleName"
-                        placeholder="Отчество"/>
+                        placeholder="Отчество"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="email"
                         name="email"
-                        placeholder="Email"/>
+                        placeholder="Email"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control name="phone"
-                        placeholder="Номер телефона"/>
+                        placeholder="Номер телефона"
+                        maxLength="10"
+                        required/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="date"
                         name="birthDate"
-                        placeholder="Дата рождения"/>
+                        placeholder="Дата рождения"
+                        required/>
         </Form.Group>
 
         <Form.Group as={Row}>
-          <Form.Label as="legend" column md={6}>Выберите пол</Form.Label>
+          <Form.Label as="legend" column="gender" md={6}>Выберите пол</Form.Label>
           <Col md={6}>
             <Form.Check
               type="radio"
@@ -97,6 +94,7 @@ class SignUpForm extends React.Component {
               value="1"
               custom
               id="male-radio"
+              required
             />
             <Form.Check
               type="radio"
@@ -114,4 +112,10 @@ class SignUpForm extends React.Component {
   }
 }
 
-export default SignUpForm;
+const mapDispatchToProps = dispatch => {
+  return {
+    signUp: (data) => dispatch(actions.signUp(data))
+  }
+};
+
+export default connect(null, mapDispatchToProps)(SignUpForm);
