@@ -72,14 +72,15 @@ class Initiative extends React.Component {
                    roundedCircle
             />
           </Col>
-          <h4 className="caption-blue text-left ml-4 mt-4">Комментарии</h4>
-          <Comment author={'Иван Медведев'}
-                   content={'У нас есть другой актуальный вопрос?'}
-                   date={'Сегодня'}/>
-          <Comment author={'Геннадий Филиппов'}
-                   content={'Даже не знаю как проголосовать'}
-                   date={'Сегодня'}/>
         </Row>
+        <h4 className="caption-blue text-left ml-4 mt-4" style={{width: '100%'}}>Комментарии</h4>
+        <Comment author={'Иван Медведев'}
+                 content={'У нас есть другой актуальный вопрос?'}
+                 date={'Сегодня'}/>
+        <Comment author={'Геннадий Филиппов'}
+                 content={'Даже не знаю как проголосовать'}
+                 date={'Сегодня'}/>
+
         <Button variant="outline-primary" block>Показать еще 10 комментариев</Button>
       </Container>
     )
