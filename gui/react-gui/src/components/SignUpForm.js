@@ -1,7 +1,8 @@
 import React from 'react';
-import axios from 'axios';
 
 import {Button, Col, Form, Row} from "react-bootstrap";
+import * as actions from "../store/actions/auth/actionCreators";
+import {connect} from "react-redux";
 
 
 class SignUpForm extends React.Component {
@@ -27,46 +28,7 @@ class SignUpForm extends React.Component {
         dateBirthday: elements.birthDate.value,
       }
     };
-    const options = {
-          method: 'POST',
-          url: 'http://localhost:8002/appUsers',
-          data: data,
-            headers: {
-                "Content-Type": "application/json"
-            }
-    };
-      const options2 = {
-          method: 'POST',
-          url: 'http://localhost:8002/token',
-          data: {
-              "username": data.username,
-              "password": data.password
-          },
-          headers: { }
-      };
-    axios(options)
-      .then(res => {
-      console.log("Создали пользака");
-        console.log(res.data);
-          axios(options2)
-              .then(res => {
-                  console.log("Получили токен");
-                  console.log(res.data);
-
-              })
-              .catch(err => {
-                  console.log("Не Получили токен");
-                  console.log(err.response.data);
-                  console.log(err.response);
-                  console.log(err.data);
-              });
-      })
-      .catch(err => {
-          console.log("Не Создали пользака");
-        console.log(err.response.data);
-        console.log(err.response);
-        console.log(err.data);
-      });
+    this.props.signUp(data);
   };
 
   render() {
@@ -105,7 +67,8 @@ class SignUpForm extends React.Component {
         </Form.Group>
         <Form.Group>
           <Form.Control name="phone"
-                        placeholder="Номер телефона"/>
+                        placeholder="Номер телефона"
+                        maxLength="10"/>
         </Form.Group>
         <Form.Group>
           <Form.Control type="date"
@@ -114,7 +77,7 @@ class SignUpForm extends React.Component {
         </Form.Group>
 
         <Form.Group as={Row}>
-          <Form.Label as="legend" column md={6}>Выберите пол</Form.Label>
+          <Form.Label as="legend" column="gender" md={6}>Выберите пол</Form.Label>
           <Col md={6}>
             <Form.Check
               type="radio"
@@ -140,4 +103,10 @@ class SignUpForm extends React.Component {
   }
 }
 
-export default SignUpForm;
+const mapDispatchToProps = dispatch => {
+  return {
+    signUp: (data) => dispatch(actions.signUp(data))
+  }
+};
+
+export default connect(null, mapDispatchToProps)(SignUpForm);

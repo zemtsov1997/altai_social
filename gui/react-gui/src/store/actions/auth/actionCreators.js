@@ -40,15 +40,14 @@ export const signIn = (data) => {
     dispatch(authStart());
     const options = {
       method: 'POST',
-      url: 'http://localhost:8001/token',
+      url: 'http://localhost:8002/token',
       data: data,
     };
     axios(options)
       .then(res => {
-        console.log(res.data);
+        console.log(res);
         const token = null;
         sessionStorage.setItem('token', token);
-        dispatch(authSuccess(token));
       })
       .catch(err => {
         dispatch(authFail(err.response));
@@ -61,13 +60,17 @@ export const signUp = (data) => {
     dispatch(authStart());
     const options = {
       method: 'POST',
-      url: 'http://localhost:8001/appUsers',
+      url: 'http://localhost:8002/appUsers',
       data: data,
     };
     axios(options)
       .then(res => {
         console.log(res.data);
         dispatch(regSuccess());
+        dispatch(signIn({
+          username: data.username,
+          password: data.password,
+        }));
       })
       .catch(err => {
         dispatch(authFail(err.response))
