@@ -22,5 +22,7 @@ public class Article implements IArticle {
     private String text;
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Campaign campaign;
+    @ManyToOne(fetch = FetchType.EAGER)
+    private ArticleType articleType;
 
 }
