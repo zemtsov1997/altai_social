@@ -29,6 +29,7 @@
         <jackson.version>2.9.8</jackson.version>
         <guava.version>28.2-jre</guava.version>
         <lombok.version>1.18.12</lombok.version>
+        <auth-jwt-api.version>1.0.0</auth-jwt-api.version>
     </properties>
 
     <build>
@@ -91,6 +92,11 @@
             <version>${social-api.version}</version>
         </dependency>
         <dependency>
+            <groupId>ru.altai</groupId>
+            <artifactId>auth-jwt-api</artifactId>
+            <version>${auth-jwt-api.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
@@ -113,6 +119,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <!--коннектор для MySQL-->
         <dependency>
