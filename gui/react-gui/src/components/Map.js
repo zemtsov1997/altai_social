@@ -1,5 +1,5 @@
 import React from 'react';
-import {GoogleMap, Marker, withGoogleMap, withScriptjs} from "react-google-maps";
+import {GoogleMap, withGoogleMap, withScriptjs} from "react-google-maps";
 
 class Map extends React.Component {
   render() {
