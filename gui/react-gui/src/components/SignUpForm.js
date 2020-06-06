@@ -3,6 +3,7 @@ import React from 'react';
 import {Button, Col, Form, Row} from "react-bootstrap";
 import * as actions from "../store/actions/auth/actionCreators";
 import {connect} from "react-redux";
+import {withRouter} from "react-router";
 
 
 class SignUpForm extends React.Component {
@@ -29,6 +30,7 @@ class SignUpForm extends React.Component {
       }
     };
     this.props.signUp(data);
+    this.props.history.push('/user/page');
   };
 
   render() {
@@ -118,4 +120,4 @@ const mapDispatchToProps = dispatch => {
   }
 };
 
-export default connect(null, mapDispatchToProps)(SignUpForm);
+export default withRouter(connect(null, mapDispatchToProps)(SignUpForm));

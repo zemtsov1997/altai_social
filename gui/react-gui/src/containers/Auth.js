@@ -7,7 +7,7 @@ class Auth extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isSignUpForm: true,
+      isSignUpForm: false,
     }
   }
 

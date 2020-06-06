@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container} from "react-bootstrap";
 import Initiative from "../components/Initiatives/Initiative";
 
 class InitiativeList extends React.Component {
