@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import Auth from "./Auth";
+import Main from "./Main";
 
 class Content extends React.Component {
   render() {
@@ -8,7 +9,7 @@ class Content extends React.Component {
       <Container className="Content mt-4">
         <Row>
           <Col md={9}>
-            <a href={"/user/page"}>Личный кабинет</a>
+            <Main/>
           </Col>
           <Col md={3}>
             <Auth/>

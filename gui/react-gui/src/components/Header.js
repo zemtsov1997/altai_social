@@ -1,6 +1,8 @@
 import React from 'react';
-import {Nav, Navbar} from "react-bootstrap";
+import avatar from '../assets/images/user.jpg';
+import {Dropdown, DropdownItem, Image, Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
+
 
 class Header extends React.Component {
   render() {
@@ -21,6 +23,9 @@ class Header extends React.Component {
               <Nav.Link as={Link} to="/">
                 Инициативы
               </Nav.Link>
+              <Nav.Link as={Link} to="/">
+                Указы
+              </Nav.Link>
             </Nav>
             <Nav pullright="true">
               <Nav.Link as={Link} to="/">
@@ -29,6 +34,17 @@ class Header extends React.Component {
               <Nav.Link as={Link} to="/">
                 Войти
               </Nav.Link>
+              <Dropdown>
+                <Image src={avatar} height={40} width={40} roundedCircle/>
+                <Dropdown.Toggle split variant="dark" id="enter-dropdown">
+                  Иванов И.
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <DropdownItem name="lk" as={Link} to="/user/page">
+                    Личный кабинет
+                  </DropdownItem>
+                </Dropdown.Menu>
+              </Dropdown>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

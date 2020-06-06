@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, Col, Container, Image, Row} from "react-bootstrap";
+import avatar from '../assets/images/user.jpg';
 
 class UserInfoImg extends React.Component{
 
@@ -8,7 +9,7 @@ class UserInfoImg extends React.Component{
             <Container className="Content">
                 <Col>
                     <Row>
-                        <Image src="/img/user.jpg" height={200} width={200} roundedCircle/>
+                        <Image src={avatar} height={200} width={200} roundedCircle/>
                     </Row>
                     <br/>
                     <Row className="justify-content-md-center">
