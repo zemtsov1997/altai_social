@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as actionTypes from './actionTypes';
+import {getToken} from "../../../methods";
 
 export const authStart = () => {
   return {
@@ -28,10 +29,10 @@ export const authFail = error => {
 };
 
 export const logout = () => {
-  sessionStorage.removeItem('token');
+  localStorage.removeItem('token');
 
   return {
-    type: actionTypes.AUTH_LOGOUT
+    type: actionTypes.AUTH_LOGOUT,
   };
 };
 
@@ -46,8 +47,9 @@ export const signIn = (data) => {
     axios(options)
       .then(res => {
         console.log(res);
-        const token = null;
-        sessionStorage.setItem('token', token);
+        const token = res.headers.authorization.slice(7);
+        dispatch(authSuccess(token));
+        localStorage.setItem('token', token);
       })
       .catch(err => {
         dispatch(authFail(err.response));
@@ -75,5 +77,16 @@ export const signUp = (data) => {
       .catch(err => {
         dispatch(authFail(err.response))
       });
+  }
+};
+
+export const authCheckState = () => {
+  return dispatch => {
+    const token = getToken();
+    if (!token) {
+      dispatch(logout());
+    } else {
+      dispatch(authSuccess(token));
+    }
   }
 };

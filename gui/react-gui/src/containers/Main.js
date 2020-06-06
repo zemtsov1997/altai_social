@@ -20,7 +20,7 @@ class Main extends React.Component {
         <hr/>
         <Row>
           <Col md={6}>
-            По вашему запросу найдено Н инициатив
+            По вашему запросу найдено 3 инициативы
             <InitiativeList/>
           </Col>
           <Col md={6}>

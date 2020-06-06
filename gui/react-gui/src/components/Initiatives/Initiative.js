@@ -7,7 +7,7 @@ import {Image} from "react-bootstrap";
 
 class Initiative extends React.Component {
   render() {
-    const {title, content, date, author} = this.props;
+    const {title, content, date, author, likes, dislikes} = this.props;
 
     return (
       <div className="Initiative">
@@ -26,16 +26,16 @@ class Initiative extends React.Component {
             <div className="media-text">
               {content}
             </div>
-            <div className="media-date" style={{float:'left'}}>
+            <div className="media-date" style={{float: 'left'}}>
               <span className="date">{date}</span>
             </div>
-            <div style={{float:'right'}}>
-              31
+            <div style={{float: 'right'}}>
+              {likes}
               <Image className="evaluation-image"
                      src={like}
                      roundedCircle
               />
-              10
+              {dislikes}
               <Image className="evaluation-image"
                      src={dislike}
                      roundedCircle

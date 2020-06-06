@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Form} from "react-bootstrap";
 import * as actions from "../store/actions/auth/actionCreators";
 import {connect} from "react-redux";
+import {withRouter} from "react-router";
 
 class SignInForm extends React.Component {
   handleSubmit = (event) => {
@@ -12,6 +13,7 @@ class SignInForm extends React.Component {
       password: elements.password.value,
     };
     this.props.signIn(data);
+    this.props.history.push('/user/page');
   };
 
   render() {
@@ -42,4 +44,4 @@ const mapDispatchToProps = dispatch => {
   }
 };
 
-export default connect(null, mapDispatchToProps)(SignInForm);
+export default withRouter(connect(null, mapDispatchToProps)(SignInForm));
