@@ -3,7 +3,7 @@ import {Button, Col, Container, Row} from "react-bootstrap";
 import InitiativeList from "./InitiativeList";
 import InitiativeDetail from "../components/Initiatives/InitiativeDetail";
 import {GOOGLE_API_KEY} from "../constants";
-import Map from "../components/Map";
+import CustomMap from "../components/Map";
 
 class Main extends React.Component {
   render() {
@@ -28,11 +28,7 @@ class Main extends React.Component {
           <Col md={6}>
             <InitiativeDetail/>
             <div className="mt-4">
-              <Map
-                googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}`}
-                loadingElement={<div style={{height: `100%`}}/>}
-                containerElement={<div style={{height: `400px`}}/>}
-                mapElement={<div style={{height: `100%`}}/>}/>
+              <CustomMap/>}/>
             </div>
           </Col>
         </Row>

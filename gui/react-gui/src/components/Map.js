@@ -1,17 +1,16 @@
 import React from 'react';
-import {GoogleMap, withGoogleMap, withScriptjs} from "react-google-maps";
+import {Map, YMaps} from "react-yandex-maps";
 
-class Map extends React.Component {
+class CustomMap extends React.Component {
   render() {
     return (
-      <GoogleMap
-        defaultZoom={16}
-        defaultCenter={{lat: 56.140775, lng: 47.249378}}
-      />
+      <div>
+        <YMaps>
+          <Map height="500px" width="100%" defaultState={{center: [53.346785, 83.776856], zoom: 9}}/>
+        </YMaps>
+      </div>
     )
   };
 }
 
-const WrappedMap = withScriptjs(withGoogleMap(Map));
-
-export default WrappedMap;
+export default CustomMap;
