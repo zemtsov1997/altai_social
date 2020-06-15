@@ -22,7 +22,7 @@
         <jakarta.validation-api.version>2.0.1</jakarta.validation-api.version>
         <jakarta.persistence-api.version>2.2.2</jakarta.persistence-api.version>
         <spring-context.version>5.1.8.RELEASE</spring-context.version>
-        <spring-security-core.version>5.1.5.RELEASE</spring-security-core.version>
+        <spring-security-core.version>5.1.11.RELEASE</spring-security-core.version>
     </properties>
 
     <build>
