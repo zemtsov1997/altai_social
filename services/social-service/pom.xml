@@ -23,7 +23,7 @@
         <maven.surefire.version>2.22.0</maven.surefire.version>
 
         <junit-jupiter.version>5.3.2</junit-jupiter.version>
-        <mysql.version>8.0.15</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <h2.version>1.4.200</h2.version>
         <social-api.version>1.0.0</social-api.version>
         <jackson.version>2.9.8</jackson.version>
