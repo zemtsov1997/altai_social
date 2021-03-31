@@ -27,7 +27,7 @@
         <h2.version>1.4.200</h2.version>
         <social-api.version>1.0.0</social-api.version>
         <jackson.version>2.9.8</jackson.version>
-        <guava.version>28.2-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <lombok.version>1.18.12</lombok.version>
         <auth-jwt-api.version>1.0.0</auth-jwt-api.version>
     </properties>
