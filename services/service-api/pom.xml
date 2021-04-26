@@ -25,7 +25,7 @@
         <thumbnailator.version>0.4.8</thumbnailator.version>
         <feign-core.version>10.1.0</feign-core.version>
         <feign-gson.version>10.1.0</feign-gson.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <javax.persistence-api.version>2.2</javax.persistence-api.version>
         <apache.httpcomponents.version>4.5.10</apache.httpcomponents.version>
