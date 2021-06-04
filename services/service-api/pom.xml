@@ -28,7 +28,7 @@
         <commons-io.version>2.6</commons-io.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <javax.persistence-api.version>2.2</javax.persistence-api.version>
-        <apache.httpcomponents.version>4.5.10</apache.httpcomponents.version>
+        <apache.httpcomponents.version>4.5.13</apache.httpcomponents.version>
     </properties>
 
     <build>
